@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Botón cambiar color</title>
 </head>
-<body> 
-    <script src="app.js"></script>
+<body>
+    <h1>Ejercicio DOM</h1>
+
+    <button id="btnColor">Cambiar color</button>
+
+    <script>
+        var boton = document.getElementById("btnColor");
+
+        boton.onclick = function(){
+            document.body.style.backgroundColor = "blue";
+        }
+    </script>
 </body>
 </html>
