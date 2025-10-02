@@ -1,0 +1,122 @@
+/* General */
+body {
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3e9dc; /* Beige */
+  color: #3e2f1c;      /* Café oscuro */
+}
+
+header {
+  background: linear-gradient(to right, #7b4f2c, #3e2f1c);
+  color: #fff8f0;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+nav a {
+  margin: 0 12px;
+  color: #ffd369; /* Dorado cálido */
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ffb703;
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Secciones */
+section {
+  padding: 25px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff8f0; /* cálido */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(62,47,28,0.2);
+}
+
+h2 {
+  color: #7b4f2c;
+  border-bottom: 2px solid #d8a47f;
+  padding-bottom: 5px;
+}
+
+/* Botones */
+button {
+  background: #a63d40; /* Rojo vino */
+  color: #fff8f0;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+button:hover {
+  background: #7b4f2c;
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.galeria img {
+  width: 150px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid #d8a47f;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(30,20,10,0.9);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox img {
+  max-width: 80%;
+  border: 3px solid #fff8f0;
+  border-radius: 6px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #d8a47f;
+  border-radius: 4px;
+  background: #fdf6ec;
+}
+
+/* Footer */
+footer {
+  background: #3e2f1c;
+  color: #fdf6ec;
+  text-align: center;
+  padding: 12px;
+}

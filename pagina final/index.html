@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafael Orozco - El Ídolo Vallenato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Rafael Orozco</h1>
+    <nav>
+      <a href="#biografia">Biografía</a>
+      <a href="#musica">Música</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="biografia">
+      <h2>Biografía</h2>
+      <p id="bio-texto">Haz clic para conocer la historia...</p>
+      <button onclick="mostrarBio()">Mostrar Biografía</button>
+    </section>
+
+    <section id="musica">
+      <h2>Música</h2>
+      <ul id="canciones"></ul>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="galeria">
+        <img src="rafaelorozco.jpg" alt="Rafael 1" onclick="abrirLightbox(this)">
+        <img src="rafaelorozco2.jpg" alt="Rafael 2" onclick="abrirLightbox(this)">
+        <img src="rafaelorozco3.jpg" alt="Rafael 3" onclick="abrirLightbox(this)">
+      </div>
+      <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+        <img id="imagen-grande" alt="foto ampliada">
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form onsubmit="return validarFormulario()">
+        <label>Nombre:<br><input type="text" id="nombre"></label><br>
+        <label>Mensaje:<br><textarea id="mensaje"></textarea></label><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto estudiantil sobre Rafael Orozco © 2025</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
